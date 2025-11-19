@@ -1,0 +1,414 @@
+html,
+body {
+	height: 100%;
+	font-family: sans-serif;
+}
+
+#header {
+	width: 100%;
+	height: 60px;
+	display: inline-block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.99);
+	z-index: 1;
+}
+
+#header input {
+	border-radius: 30px 0 0 30px;
+	border: 0.5px solid #bbb;
+	width: 22%;
+	height: 55%;
+	position: absolute;
+	left: 36%;
+	margin: 10px 0;
+	padding: 0 15px;
+	font-size: 1rem;
+}
+
+#header .search {
+	background: #eeeeee;
+	border: 0.5px solid #bbb;
+	border-radius: 0 30px 30px 0;
+	margin: 10px 0;
+	width: 3%;
+	height: 55%;
+	position: absolute;
+	left: 60%;
+	text-align: center;
+}
+
+#header .search img {
+	vertical-align: -15px;
+}
+
+#header .mic {
+	background: #eeeeee;
+	border: 0.5px solid #eee;
+	border-radius: 50%;
+	margin: 10px 0;
+	width: 2.7%;
+	height: 55%;
+	position: absolute;
+	left: 64%;
+	text-align: center;
+}
+
+#header .mic img {
+	vertical-align: -15px;
+}
+
+#header .hamburger {
+	border-radius: 50%;
+	margin: 10px 0;
+	width: 2.7%;
+	height: 55%;
+	position: absolute;
+	left: 88.5%;
+	text-align: center;
+}
+
+#header .hamburger img {
+	vertical-align: -15px;
+}
+
+#header .login {
+	float: right;
+	width: 85px;
+	height: 35px;
+	border: 0.5px solid #eee;
+	border-radius: 30px;
+	margin: 10px 35px;
+}
+
+#header .login a {
+	display: block;
+	font-size: 0.9rem;
+	color: blue;
+	text-decoration: none;
+	height: 35px;
+	line-height: 35px;
+}
+
+#header .login i {
+	font-size: 1.3rem;
+	vertical-align: middle;
+	margin: 0 5px 0 10px;
+}
+
+#sidebar {
+	float: left;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 15%;
+	height: 100vh;
+	overflow: auto;
+	line-height: 2.8;
+	z-index: 2;
+}
+
+#sidebar p,
+#sidebar h2,
+#sidebar h3 {
+	margin-left: 15px;
+	line-height: 2;
+	font-weight: bold;
+}
+
+#sidebar .menu {
+	float: left;
+	margin: 15px 5px 15px 20px;
+}
+
+#sidebar label {
+	cursor: pointer;
+}
+
+#sidebar .logo {
+	display: inline-block;
+	width: 150px;
+	height: 25px;
+	margin: 10px 0 0 20px;
+}
+
+#sidebar .logo label {
+	margin-right: 20px;
+}
+
+#sidebar .logo a img {
+	width: 100px;
+	height: 25px;
+}
+
+#sidebar ul i {
+	font-size: 1.3rem;
+	margin: 0px 30px 0 20px;
+	vertical-align: middle;
+}
+
+#sidebar ul img {
+	width: 23px;
+	height: 23px;
+	margin: 0 30px 0 20px;
+	vertical-align: middle;
+}
+
+#sidebar ul a {
+	display: block;
+	text-decoration: none;
+	font-size: 0.9rem;
+	color: #000;
+	height: 35px;
+	line-height: 35px;
+}
+
+#sidebar p {
+	font-size: 0.9rem;
+}
+
+#sidebar .login01 {
+	width: 85px;
+	height: 35px;
+	border: 0.5px solid #eee;
+	border-radius: 30px;
+	margin: 10px 35px;
+}
+
+#sidebar .login01 i {
+	font-size: 1.3rem;
+	vertical-align: middle;
+	margin: 0 5px 0 10px;
+}
+
+#sidebar .login01 a {
+	display: block;
+	font-size: 0.9rem;
+	color: blue;
+	text-decoration: none;
+	height: 35px;
+	line-height: 35px;
+}
+
+#sidebar hr {
+	border-color: #fff;
+	opacity: 0.3;
+}
+
+#footer {
+	margin: 16px;
+	line-height: 1.2;
+}
+
+#footer a {
+	text-decoration: none;
+	color: #000;
+	font-size: 0.85rem;
+}
+
+#footer p {
+	color: gray;
+	font-size: 0.8rem;
+}
+
+#content {
+	float: right;
+	width: 85%;
+	height: 100vh;
+	margin-left: 10%;
+	position: relative;
+	top: 60px;
+}
+#content .menu02 {
+	float: right;
+	position: fixed;
+	left: 18%;
+	top: 65px;
+	width: 91%;
+}
+
+#content .menu02 li {
+	display: inline-block;
+	font-size: 0;
+	background-color: #eee;
+	border-radius: 10px;
+	margin-right: 10px;
+	padding: 10px;
+}
+
+#content .menu02 a {
+	text-decoration: none;
+	font-size: 0.9rem;
+	color: #000;
+	font-weight: bold;
+}
+
+#content .video {
+	clear: both;
+	margin-top: 65px;
+	margin-left: 3%;
+	width: 100%;
+	height: calc(100vh - 65px - 20px);
+}
+
+#content .video .v1 {
+	width: 31%;
+	height: 46%;
+	border-radius: 5px;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+}
+
+#content .video .v1:hover {
+	background: #eee;
+}
+
+#content .video .v1 .bg {
+	width: 100%;
+}
+
+#content .video .v1 .icon {
+	float: left;
+	width: 10%;
+	margin-top: 0.5rem;
+}
+
+#content .video .v1 .text {
+	width: 89%;
+	margin-top: 0.5rem;
+}
+
+#content .video .v1 a {
+	font-size: 0.99rem;
+	text-decoration: none;
+	color: #000;
+	width: 75%;
+	line-height: 1.2;
+}
+#content .video .v1 .logolink {
+	color: #bbb;
+	font-size: 14px;
+}
+
+#content .video .v1 span {
+	color: #bbb;
+	font-size: 14px;
+}
+
+#content .video .v1 .hamburger {
+	float: right;
+	margin-top: 0.5rem;
+}
+
+#content .video .v1 .hamburger:hover {
+	width: 25px;
+	background: gray;
+	border-radius: 50px;
+}
+
+#content .video .short {
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+#content .video .short img {
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+
+#content .video .short-text {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+#content .video .v2 {
+	width: 18%;
+	height: 29%;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: top;
+	border-radius: 5px;
+}
+
+#content .video .v2:hover {
+	background: #eee;
+}
+
+#content .video .v2 .bg2 {
+	width: 100%;
+	height: 180%;
+}
+
+#content .video .v2 div {
+	font-size: 1.1rem;
+	margin-bottom: 10px;
+}
+
+#content .video .v2 span {
+	font-size: 0.9rem;
+	color: #aaa;
+}
+
+.sidebar02 {
+	display: none;
+}
+
+#sidebar.collapse {
+	width: 13%;
+}
+
+#sidebar.collapse .sidebar01 {
+	display: none;
+}
+
+#sidebar.collapse .sidebar02 {
+	display: block;
+	width: 100%;
+	padding-top: 10px;
+}
+
+#content.expand {
+	width: 99%;
+}
+
+#sidebar .sidebar02 div {
+	display: block;
+	width: 30%;
+	height: 100px;
+}
+
+#sidebar .sidebar02 a {
+	display: block;
+	font-size: 1.3rem;
+	height: 100px;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	margin: auto;
+	align-content: center;
+	border-radius: 10px;
+}
+
+#sidebar .sidebar02 a:hover {
+	background: #eee;
+}
+
+#sidebar .sidebar02 span {
+	display: block;
+	font-size: 0.5rem;
+}
+
+#sidebar .sidebar02 i {
+	display: block;
+	margin: auto;
+}
+
+#sidebar .sidebar02 img {
+	display: block;
+	margin: auto;
+	width: 1.3rem;
+	height: 1.3rem;
+}
